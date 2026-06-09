@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>资料下载 - 坷拉博士</title>
-<meta name="description" content="毕设题目合集、范文框架、MATLAB/Simulink/PLC 代码模板与仿真示例文件，供学习参考，微信领取并答疑。">
+<title>代码仿真 - 坷拉博士</title>
+<meta name="description" content="MATLAB、Simulink、FlexSim、PLC、Python 代码编写与仿真建模、报错调试、参数调优、结果出图，附注释与运行说明，交付答疑。">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -19,9 +19,9 @@
     <nav class="top-nav">
       <a href="index.html">首页</a>
       <a href="paper.html">论文辅导</a>
-      <a href="code.html">代码仿真</a>
+      <a href="code.html" class="cur">代码仿真</a>
       <a href="cases.html">案例库</a>
-      <a href="resources.html" class="cur">资料下载</a>
+      <a href="resources.html">资料下载</a>
       <a href="profile.html">博主介绍</a>
       <a href="contact.html">联系咨询</a>
     </nav>
@@ -48,9 +48,9 @@
       <a href="index.html"><span class="ic">🏠</span>首页</a>
       <a href="profile.html"><span class="ic">👤</span>博主介绍</a>
       <a href="paper.html"><span class="ic">📄</span>论文辅导</a>
-      <a href="code.html"><span class="ic">💻</span>代码仿真</a>
+      <a href="code.html" class="cur"><span class="ic">💻</span>代码仿真</a>
       <a href="cases.html"><span class="ic">🧪</span>案例库</a>
-      <a href="resources.html" class="cur"><span class="ic">📦</span>资料下载</a>
+      <a href="resources.html"><span class="ic">📦</span>资料下载</a>
       <a href="contact.html"><span class="ic">💬</span>联系咨询</a>
     </div>
     <div class="nav-block">
@@ -82,58 +82,73 @@
   <section class="main">
 
     <div class="page-hero">
-      <div class="eyebrow">资料下载</div>
-      <h1>毕设资料 / 代码模板 / 仿真示例</h1>
-      <p>整理了一些常用的题目合集、范文框架、代码模板和仿真示例文件，供学习参考。部分资料通过微信领取，方便针对你的方向做说明和答疑。</p>
-      <div class="hero-tags"><span>题目合集</span><span>范文框架</span><span>代码模板</span><span>仿真文件</span><span>PLC源码</span></div>
-    </div>
-
-    <div class="card">
-      <h2>可领取的资料</h2>
-      <div class="dl-item">
-        <div class="dl-ico">📚</div>
-        <div class="dl-body"><h4>电子信息毕设题目 123 套 + 范文框架</h4><p>覆盖通信、信号处理、嵌入式、图像识别，含选题说明与章节框架。</p></div>
-        <a class="dl-get" href="contact.html">微信获取</a>
-      </div>
-      <div class="dl-item">
-        <div class="dl-ico">📈</div>
-        <div class="dl-body"><h4>MATLAB 预测模型代码模板包</h4><p>BP / SVR / LSTM / 随机森林，统一接口、含注释与运行说明。</p></div>
-        <a class="dl-get" href="contact.html">微信获取</a>
-      </div>
-      <div class="dl-item">
-        <div class="dl-ico">🏭</div>
-        <div class="dl-body"><h4>FlexSim 仓储仿真示例文件</h4><p>可直接打开的仿真模型 + 建模步骤说明，方便照着改。</p></div>
-        <a class="dl-get" href="contact.html">微信获取</a>
-      </div>
-      <div class="dl-item">
-        <div class="dl-ico">⚡</div>
-        <div class="dl-body"><h4>Simulink 控制 / 新能源示例模型</h4><p>PID、混动能量管理等示例 .slx，参数可改。</p></div>
-        <a class="dl-get" href="contact.html">微信获取</a>
-      </div>
-      <div class="dl-item">
-        <div class="dl-ico">🔌</div>
-        <div class="dl-body"><h4>西门子 S7-1200 PLC 实训源码</h4><p>典型案例梯形图 + 注释，可导入 TIA Portal。</p></div>
-        <a class="dl-get" href="contact.html">微信获取</a>
-      </div>
-      <div class="dl-item">
-        <div class="dl-ico">📝</div>
-        <div class="dl-body"><h4>毕业论文实验章节写法指南</h4><p>实验设计、过程、结果怎么写，配模板与示例。</p></div>
-        <a class="dl-get" href="contact.html">微信获取</a>
+      <div class="eyebrow">代码 / 仿真</div>
+      <h1>MATLAB · Simulink · FlexSim · PLC 代码编写与仿真建模</h1>
+      <p>承接理工科课程设计、毕业设计、科研中的代码与仿真需求：从建模、编写、调试到出图，交付时附完整注释和运行说明，并提供答疑，帮你真正跑通、看懂。</p>
+      <div class="hero-tags">
+        <span>MATLAB</span><span>Simulink</span><span>FlexSim</span><span>PLC</span><span>Python</span><span>报错调试</span><span>参数调优</span>
       </div>
     </div>
 
     <div class="card">
-      <h2>说明</h2>
+      <h2>技术方向</h2>
+      <div class="svc-grid">
+        <div class="svc"><div class="svc-ico">📐</div><h4>MATLAB</h4><p>数值计算、优化算法（遗传/粒子群等）、机器学习预测、信号与图像处理、GUI。</p></div>
+        <div class="svc"><div class="svc-ico">⚡</div><h4>Simulink</h4><p>控制系统、电力电子、新能源车动力与能量管理、PID 调参、动力学仿真。</p></div>
+        <div class="svc"><div class="svc-ico">🏭</div><h4>FlexSim</h4><p>生产线、仓储物流、排队与调度仿真，吞吐量、利用率、瓶颈分析。</p></div>
+        <div class="svc"><div class="svc-ico">🔌</div><h4>PLC</h4><p>西门子 S7-1200/1500 梯形图、顺序控制、模拟量、通信，TIA Portal 工程。</p></div>
+        <div class="svc"><div class="svc-ico">🐍</div><h4>Python</h4><p>数据处理、爬虫、机器学习/深度学习模型、可视化与脚本自动化。</p></div>
+        <div class="svc"><div class="svc-ico">📊</div><h4>数据与建模</h4><p>预测模型对比、参数辨识、算法复现，统一接口、可替换数据集。</p></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>可以承接的工作类型</h2>
       <ul>
-        <li>资料用于学习和参考，请结合自己的课题理解使用</li>
-        <li>领取后如有运行 / 使用问题，可微信答疑</li>
-        <li>需要按你的方向定制的代码或仿真，见 <a href="code.html" style="color:#fc5531">代码仿真</a></li>
+        <li>从零编写代码 / 搭建仿真模型，按你的题目和参数定制</li>
+        <li>已有代码报错、跑不通、结果不对的调试与排查</li>
+        <li>参数调优（如 PID 振荡、模型不收敛、算法不收敛）</li>
+        <li>结果出图：规范的论文级图表，附作图源文件</li>
+        <li>已有模型的参数修改、功能扩展与二次开发</li>
+        <li>远程讲解与答疑，帮你理解代码逻辑、能自己复现</li>
       </ul>
     </div>
 
+    <div class="card">
+      <h2>交付与售后</h2>
+      <div class="steps">
+        <div class="step"><div class="num"></div><div class="stxt"><h4>明确需求</h4><p>发来题目、参数要求、软件版本和截止时间，确认能做、给报价。</p></div></div>
+        <div class="step"><div class="num"></div><div class="stxt"><h4>开发调试</h4><p>编写 / 建模 / 调通，保证在约定的软件版本下可运行。</p></div></div>
+        <div class="step"><div class="num"></div><div class="stxt"><h4>带注释交付</h4><p>交付源码 / .slx / 工程文件 + 运行说明文档，关键步骤有注释。</p></div></div>
+        <div class="step"><div class="num"></div><div class="stxt"><h4>运行答疑</h4><p>交付后帮你在自己电脑上跑通，运行 / 配置问题免费答疑。</p></div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>收费参考</h2>
+      <table class="ptable">
+        <thead><tr><th>类型</th><th>典型场景</th><th>价格区间</th></tr></thead>
+        <tbody>
+          <tr><td><b>报错调试</b></td><td>已有代码跑不通、版本/环境问题</td><td class="price">小额起</td></tr>
+          <tr><td><b>代码 / 模型编写</b></td><td>课设、毕设、算法复现</td><td class="price">按复杂度</td></tr>
+          <tr><td><b>仿真建模</b></td><td>Simulink / FlexSim 完整模型</td><td class="price">按规模</td></tr>
+          <tr><td><b>定制 + 论文配套</b></td><td>代码/仿真 + 实验章节指导</td><td class="price">面议</td></tr>
+        </tbody>
+      </table>
+      <div class="price-note">价格取决于功能复杂度、软件版本和交付时间。加微信发来题目，看清楚需求后报准确价，确认后再开始。</div>
+    </div>
+
+    <div class="card faq">
+      <h2>常见问题</h2>
+      <details><summary>能保证在我的电脑上跑通吗？</summary><p>可以。确认你的软件版本（如 MATLAB R2022b、TIA Portal 版本）后开发，交付时附运行说明，并远程协助你在本机跑通。</p></details>
+      <details><summary>只是报错，能单独帮我看吗？</summary><p>可以。把报错截图和相关文件发微信，小问题通常很快能定位，按问题大小收费。</p></details>
+      <details><summary>交付的东西会讲解吗？</summary><p>会。关键代码 / 模型逻辑会讲清楚，确保你能看懂、能自己改和复现，而不是拿到一个黑盒。</p></details>
+      <details><summary>后续要改参数怎么办？</summary><p>交付的代码和模型结构清晰、可改参数，常见的小修改在合理范围内免费支持。</p></details>
+    </div>
+
     <div class="cta-strip">
-      <div class="cta-txt"><h3>想要哪份资料，微信直接说</h3><p>会按你的方向发对应的资料和说明</p></div>
-      <a class="cta-act" href="contact.html">微信领取</a>
+      <div class="cta-txt"><h3>把题目和软件版本发我，先确认再开工</h3><p>微信 airsky230 · 附题目 / 参数 / 截止时间</p></div>
+      <a class="cta-act" href="contact.html">立即咨询</a>
     </div>
 
   </section><!-- /main -->

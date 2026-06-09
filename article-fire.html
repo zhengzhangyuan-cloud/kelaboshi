@@ -1,8 +1,201 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高层建筑火灾风险评价及智能报警系统方案</title><meta name="description" content="坷拉博士个人资料站，论文修改、代码仿真、MATLAB、Simulink、FlexSim、PLC资料与案例。"><link rel="stylesheet" href="styles.css"></head><body><header class="top"><div class="top-inner"><a class="brand" href="index.html"><span class="brand-dot">坷</span><span>坷拉博士<small>资料站</small></span></a><nav class="nav"><a href="index.html" class="">首页</a><a href="profile.html" class="">博主介绍</a><a href="article-fire.html" class="active">文章样例</a><a href="cases.html" class="">案例库</a><a href="resources.html" class="">资料下载</a><a href="contact.html" class="">联系咨询</a></nav><input class="search" value="MATLAB / Simulink / FlexSim" readonly><a class="wechat-btn" href="contact.html">微信咨询</a></div></header><div class="notice"><div class="notice-inner"><span>声明：这是 <b>坷拉博士个人资料页</b>，用于承接 CSDN / 知乎文章读者咨询；不是 CSDN 官方页面。</span><span>微信：<b>your_wechat_id</b></span></div></div><main class="layout"><aside class="left"><a class="active" href="index.html">🏠 首页</a><a href="profile.html">👤 博主介绍</a><a href="article-fire.html">📄 文章样例</a><a href="cases.html">🧪 案例库</a><a href="resources.html">📦 资料下载</a><a href="contact.html">💬 联系咨询</a><div class="sep"></div><a href="#"># MATLAB</a><a href="#"># Simulink</a><a href="#"># FlexSim</a><a href="#"># PLC</a><a href="#"># 毕业论文</a></aside><section class="main"><article class="article"><h1>高层建筑火灾风险评价及智能报警系统方案【附数据】</h1><div class="meta"><span class="tag">原创</span><span>2026-06-04 20:18:14</span><span>阅读 20</span><span>#matlab</span><span>CC 4.0 BY-SA</span></div><div class="callout">长期致力于高层建筑火灾风险评估、建筑仿真、程序编写、数据处理。需要配套数据、代码或论文实验章节，可通过右侧微信沟通。</div><h2>一、方案概述</h2><p>根据高层建筑火灾风险源分类，建立人员因素、设备因素、环境因素三级指标体系。通过未确知测度理论完成风险等级判断，并结合 MATLAB GUI 输出可视化结果。</p><h2>二、核心模块</h2><p>系统可包含：风险指标权重计算、未确知隶属度评价、LoRa 传感器数据模拟、SVR 智能报警算法、结果可视化与论文图表输出。</p><pre class="code">import numpy as np
-from sklearn.svm import SVR
-from sklearn.preprocessing import StandardScaler
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>高层建筑火灾风险评价及智能报警系统方案【附MATLAB数据与代码】 - 坷拉博士</title>
+<meta name="description" content="高层建筑火灾风险评价及智能报警系统方案【附MATLAB数据与代码】">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- TOP NAV -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="logo">
+      <div class="logo-icon">坷</div>
+      <span>坷拉博士<small style="font-weight:400;color:#86909c;font-size:13px;margin-left:4px">个人资料站</small></span>
+    </div>
+    <div class="top-search">🔍 搜索：MATLAB / Simulink / 毕业论文</div>
+    <nav class="top-nav">
+      <a href="index.html">首页</a>
+      <a href="paper.html">论文辅导</a>
+      <a href="code.html">代码仿真</a>
+      <a href="cases.html" class="cur">案例库</a>
+      <a href="resources.html">资料下载</a>
+      <a href="profile.html">博主介绍</a>
+      <a href="contact.html">联系咨询</a>
+    </nav>
+    <div class="top-right">
+      <a class="btn-create" href="contact.html">💬 微信咨询</a>
+    </div>
+  </div>
+</header>
 
-class SVRFireAlarm:
-    def __init__(self):
-        self.scaler = StandardScaler()
-        self.model = SVR(kernel='rbf', C=8.5, epsilon=0.01, gamma=0.1)</pre><h2>三、可交付内容</h2><p>可按需求交付 MATLAB 代码、Python 演示代码、数据表、结果图、论文实验章节、答辩说明。不同学校格式要求不同，建议先发任务书确认。</p><div class="contact-box"><b>获取方式：</b>添加微信 <b>your_wechat_id</b>，发送“高层建筑火灾风险评价”即可咨询代码、数据和论文章节。</div></article><section class="comments"><h3>读者留言</h3><div class="comment"><div class="c-avatar">A</div><div class="c-body"><b>安全工程同学</b><p>这个可以改成校园宿舍火灾风险评价吗？</p><span class="c-time">可改，指标体系和数据表需要重新整理。</span></div></div><div class="comment"><div class="c-avatar">B</div><div class="c-body"><b>自动化读者</b><p>能不能加上 Simulink 报警流程图？</p><span class="c-time">可以，适合做答辩展示。</span></div></div><div class="safe-label">留言区为站内咨询记录样式，不冒充 CSDN 官方评论。</div></section></section><aside class="right"><div class="side-card"><div class="side-title">坷拉博士</div><div class="profile-head"><div class="avatar">👨‍💻</div><div><b>论文 · 代码 · 仿真</b><br><span style="color:#777">个人/小团队接单</span></div></div><div class="safe-label">长期更新工科软件文章，承接论文修改、代码仿真、毕设资料整理。</div></div><div class="side-card"><div class="side-title">微信咨询</div><div class="qr">替换为<br>qr-wechat.jpg<br>微信二维码</div><div class="wechat-id">your_wechat_id</div><div style="text-align:center;color:#09bb07;font-size:13px"><span class="green-dot"></span>工作时间在线</div><a href="contact.html" class="btn-full">查看咨询模板</a></div><div class="side-card"><div class="side-title">热门方向</div><div class="mini-list"><a>MATLAB 代码与数据处理</a><a>Simulink 控制系统仿真</a><a>FlexSim 生产物流仿真</a><a>PLC 梯形图与课程设计</a><a>毕业论文选题与修改</a></div></div></aside></main><footer class="footer">© 2026 坷拉博士个人资料站 · 技术博客风格落地页 · 非 CSDN 官方页面 · 微信 your_wechat_id</footer></body></html>
+<!-- NOTICE -->
+<div class="notice">
+  <div class="notice-inner">
+    <span>微信：<b>airsky230</b> &nbsp;|&nbsp; 工作时间：9:00–22:00 在线回复</span>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="wrap">
+
+  <!-- LEFT NAV -->
+  <aside class="left-nav">
+    <div class="nav-block">
+      <div class="nav-block-title">我的主页</div>
+      <a href="index.html"><span class="ic">🏠</span>首页</a>
+      <a href="profile.html"><span class="ic">👤</span>博主介绍</a>
+      <a href="paper.html"><span class="ic">📄</span>论文辅导</a>
+      <a href="code.html"><span class="ic">💻</span>代码仿真</a>
+      <a href="cases.html" class="cur"><span class="ic">🧪</span>案例库</a>
+      <a href="resources.html"><span class="ic">📦</span>资料下载</a>
+      <a href="contact.html"><span class="ic">💬</span>联系咨询</a>
+    </div>
+    <div class="nav-block">
+      <div class="nav-block-title">专栏分类</div>
+      <a href="cases.html"><span class="ic">📐</span>MATLAB<span class="cnt">1200+</span></a>
+      <a href="cases.html"><span class="ic">⚡</span>Simulink<span class="cnt">800+</span></a>
+      <a href="cases.html"><span class="ic">🏭</span>FlexSim<span class="cnt">300+</span></a>
+      <a href="cases.html"><span class="ic">🔌</span>PLC<span class="cnt">200+</span></a>
+      <a href="paper.html"><span class="ic">📄</span>毕业论文<span class="cnt">600+</span></a>
+      <a href="cases.html"><span class="ic">📊</span>数据处理<span class="cnt">400+</span></a>
+    </div>
+    <div class="nav-block">
+      <div class="nav-block-title">热门标签</div>
+      <div class="tag-list">
+        <a href="cases.html">MATLAB</a>
+        <a href="cases.html">Simulink</a>
+        <a href="cases.html">FlexSim</a>
+        <a href="cases.html">PLC</a>
+        <a href="cases.html">毕设</a>
+        <a href="cases.html">仿真</a>
+        <a href="cases.html">优化算法</a>
+        <a href="cases.html">控制系统</a>
+        <a href="cases.html">数据处理</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <section class="main">
+
+    <article class="card prose">
+      <div class="crumb"><a href="index.html">首页</a> / <a href="cases.html">案例库</a> / 高层建筑火灾风险评价</div>
+      <h1>高层建筑火灾风险评价及智能报警系统方案【附MATLAB数据与代码】</h1>
+      <div class="art-info">2026-06-04 · 👁 2341 · 👍 38 &nbsp;·&nbsp; <span class="tag">MATLAB</span><span class="tag">安全工程</span><span class="tag">未确知测度</span><span class="tag">SVR</span><span class="tag">毕设</span></div>
+
+      <p>本文整理一个面向高层建筑的火灾风险评价 + 智能报警系统的完整方案，适合安全工程、自动化、电子信息等方向的课程设计与毕业设计。内容包含风险评估模型、MATLAB 实现、报警算法和无线传感网络部分，配套数据集与可运行代码。</p>
+
+      <h2>一、研究背景</h2>
+      <p>高层建筑人员密集、疏散困难，火灾风险评估和早期报警尤为重要。传统方法多依赖单一阈值判断，容易误报或漏报。本方案把<strong>定量风险评估</strong>和<strong>智能报警</strong>结合起来，先对建筑整体火灾风险打分，再用回归模型对传感器数据做趋势预测，提前预警。</p>
+
+      <h2>二、风险评估模型</h2>
+      <p>采用未确知测度理论建立评估模型，步骤如下：</p>
+      <ul>
+        <li>确定评价指标体系（如可燃物荷载、疏散条件、消防设施、电气安全等）</li>
+        <li>构造单指标未确知测度函数，把原始指标映射到各风险等级</li>
+        <li>用信息熵确定指标权重，避免主观打分偏差</li>
+        <li>计算综合测度并按置信度识别准则判定风险等级</li>
+      </ul>
+      <p>这一部分在 MATLAB 中实现，并封装成 GUI，输入指标值即可输出风险等级与各指标贡献。</p>
+
+      <h2>三、智能报警模型</h2>
+      <p>报警部分使用支持向量回归（SVR）对温度、烟雾浓度等时序数据建模，预测下一时刻的趋势，结合阈值给出分级预警。核心调用示意：</p>
+      <pre><code>% 训练 SVR 报警模型（示意）
+model = fitrsvm(Xtrain, Ytrain, ...
+    'KernelFunction','gaussian', ...
+    'Standardize', true);
+
+% 预测并分级预警
+yhat = predict(model, Xtest);
+level = warn_level(yhat, thresholds);   % 自定义分级函数</code></pre>
+      <p>实际工程中会做参数寻优（核参数、惩罚系数）和交叉验证，代码里都有注释说明。</p>
+
+      <h2>四、无线传感网络</h2>
+      <p>感知层用 LoRa 组建低功耗无线传感网络，节点采集温度、烟雾、CO 浓度后上传网关，再送入上位机做评估与报警。这部分给出节点选型、组网拓扑和数据帧格式说明，便于复现或替换为其它方向的传感方案。</p>
+
+      <h2>五、数据与代码说明</h2>
+      <p>配套提供：</p>
+      <ul>
+        <li>评估模型与 GUI 的完整 MATLAB 代码（含注释）</li>
+        <li>报警模型训练 / 预测脚本与示例数据集</li>
+        <li>运行说明文档，标注软件版本与运行步骤</li>
+      </ul>
+      <blockquote>提示：代码以帮助理解和复现为目的，建议结合自己的课题调整指标体系和数据；需要按你的方向定制或讲解，可微信沟通。</blockquote>
+
+      <h2>六、适用方向</h2>
+      <p>安全工程、消防工程、自动化、电子信息、建筑环境与能源等方向的毕设与课设，都可以在此框架上扩展，例如更换评价指标、替换预测模型或调整传感方案。</p>
+
+      <div class="cta-strip" style="margin-top:24px">
+        <div class="cta-txt"><h3>需要这套代码 / 模型或按你的参数定制？</h3><p>微信 airsky230 · 发来题目和要求即可</p></div>
+        <a class="cta-act" href="contact.html">微信咨询</a>
+      </div>
+    </article>
+
+  </section><!-- /main -->
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="right">
+
+    <div class="side-card">
+      <div class="side-title">联系 / 微信咨询</div>
+      <div class="wechat-section">
+        <div class="qr-img">
+          <img src="assets/img/qr.png" alt="微信二维码">
+        </div>
+        <div class="wechat-id-text">airsky230</div>
+        <div class="wechat-sub"><span class="online-dot"></span>工作时间在线 · 24h内回复</div>
+        <a class="btn-consult" href="contact.html">添加微信，立即咨询</a>
+      </div>
+    </div>
+
+    <div class="side-card">
+      <div class="side-title">关于博主</div>
+      <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px">
+        <img src="assets/img/avatar.jpg" style="width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid #e8e8ed" alt="">
+        <div>
+          <div style="font-weight:700;font-size:14px">坷拉博士</div>
+          <div style="color:#86909c;font-size:12px">CSDN 博客专家 · 3000万访问</div>
+        </div>
+      </div>
+      <p style="font-size:12px;color:#4e5969;line-height:1.7">工科软件领域深耕多年，承接论文辅导、代码编写、仿真建模、毕业设计全流程支持，按时交付，售后答疑。</p>
+    </div>
+
+    <div class="side-card">
+      <div class="side-title">服务方向</div>
+      <div class="skill-grid">
+        <a class="skill-tag" href="code.html">📐 MATLAB代码</a>
+        <a class="skill-tag" href="code.html">⚡ Simulink仿真</a>
+        <a class="skill-tag" href="code.html">🏭 FlexSim建模</a>
+        <a class="skill-tag" href="code.html">🔌 PLC编程</a>
+        <a class="skill-tag" href="paper.html">📝 论文修改</a>
+        <a class="skill-tag" href="paper.html">🎓 毕设指导</a>
+        <a class="skill-tag" href="code.html">🐍 Python代码</a>
+        <a class="skill-tag" href="paper.html">📊 数据分析</a>
+      </div>
+    </div>
+
+    <div class="side-card">
+      <div class="side-title">热门文章</div>
+      <div class="hot-list">
+        <a href="article-fire.html"><span class="hot-num">1</span>高层建筑火灾风险评价及智能报警系统</a>
+        <a href="articles/matlab-prediction.html"><span class="hot-num">2</span>MATLAB预测模型对比模板（BP/SVR/LSTM）</a>
+        <a href="articles/flexsim-warehouse.html"><span class="hot-num" style="background:#fc5531">3</span>FlexSim 仓储物流仿真从零到完整</a>
+        <a href="articles/simulink-phev.html"><span class="hot-num gray">4</span>插电混动客车 Simulink 控制策略</a>
+        <a href="articles/plc-s7-1200.html"><span class="hot-num gray">5</span>西门子 S7-1200 PLC 实训合集</a>
+        <a href="cases.html"><span class="hot-num gray">6</span>毕业论文实验章节写法指南</a>
+      </div>
+    </div>
+
+  </aside>
+
+</div><!-- /wrap -->
+
+<footer class="footer">
+  © 2026 坷拉博士个人资料站 · MATLAB · Simulink · FlexSim · PLC · 毕业论文辅导 · 微信：airsky230 · <b>非任何平台官方页面</b>
+</footer>
+
+</body>
+</html>
